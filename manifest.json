@@ -1,0 +1,17 @@
+{
+  "name": "Baby manual for new dads",
+  "short_name": "Baby Manual",
+  "description": "A practical, no-nonsense guide to caring for your baby",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1d70b8",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect fill='%231d70b8' width='192' height='192'/%3E%3Cpath fill='%23FFFFFF' d='M96 36c-33.084 0-60 26.916-60 60s26.916 60 60 60 60-26.916 60-60-26.916-60-60-60zm0 18c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10zm16 72H80v-6h8V96h-8v-6h16v30h8v6z'/%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+

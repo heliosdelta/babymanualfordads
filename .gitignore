@@ -1,0 +1,15 @@
+# Temporary scripts
+create_pages.sh
+create_remaining.sh
+page_template.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+

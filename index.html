@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby manual for new dads</title>
+    <meta name="description" content="A practical, no-nonsense guide to caring for your baby. Everything you need to know, without the overwhelming detail.">
+    <meta name="theme-color" content="#1d70b8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Baby Manual">
+</head>
+<body>
+    <div class="skip-link">
+        <a href="#main-content">Skip to main content</a>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="header-title">
+                    <a href="/">Baby manual for new dads</a>
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <ol>
+                <li>Home</li>
+            </ol>
+        </div>
+    </div>
+
+    <main id="main-content" class="main-content">
+        <div class="container">
+            <div class="content">
+                <h1>Baby manual for new dads</h1>
+                <p class="lede">A practical, no-nonsense guide to caring for your baby. Everything you need to know, without the overwhelming detail.</p>
+            </div>
+
+            <div class="intro-cards-wrapper">
+                <div class="section-card">
+                    <h2>About this manual</h2>
+                    <p>This manual is designed specifically for new dads. It covers the essential skills and knowledge you need in those first months, written in clear, practical language.</p>
+                    <p>You'll find step-by-step guides, safety information, and practical tips based on current NHS guidance. Everything is organised so you can find what you need quickly, especially at 3am.</p>
+                    <p>Remember: every baby is different, and this guide provides general information. Always consult healthcare professionals for medical advice specific to your baby.</p>
+                </div>
+            </div>
+
+            <div class="section-nav-wrapper">
+                <h2>Contents</h2>
+                <nav class="section-nav" aria-label="Main navigation">
+                    <a href="getting-started.html" class="section-nav-item getting-started-highlight">
+                        <h3>Getting Started</h3>
+                        <p>The first 48 hours and essential skills for new dads</p>
+                    </a>
+                    <a href="feeding.html" class="section-nav-item">
+                        <h3>Feeding</h3>
+                        <p>Supporting breastfeeding, bottle feeding, and formula preparation</p>
+                    </a>
+                    <a href="nappy-changing.html" class="section-nav-item">
+                        <h3>Nappy Changing</h3>
+                        <p>Step-by-step guide to changing nappies and what to expect</p>
+                    </a>
+                    <a href="sleep.html" class="section-nav-item">
+                        <h3>Sleep</h3>
+                        <p>Safe sleep rules, settling techniques, and what's normal</p>
+                    </a>
+                    <a href="bathing.html" class="section-nav-item">
+                        <h3>Bathing</h3>
+                        <p>How to bath your baby safely and confidently</p>
+                    </a>
+                    <a href="soothing.html" class="section-nav-item">
+                        <h3>Soothing Crying</h3>
+                        <p>Understanding why babies cry and effective soothing techniques</p>
+                    </a>
+                    <a href="safety.html" class="section-nav-item">
+                        <h3>Safety</h3>
+                        <p>Essential safety guidelines for home, car, and out and about</p>
+                    </a>
+                    <a href="development.html" class="section-nav-item">
+                        <h3>Development</h3>
+                        <p>Milestones by age and how to support your baby's development</p>
+                    </a>
+                    <a href="health.html" class="section-nav-item">
+                        <h3>Health</h3>
+                        <p>Common health issues, when to seek help, and taking temperature</p>
+                    </a>
+                    <a href="support.html" class="section-nav-item">
+                        <h3>Getting Support</h3>
+                        <p>Professional support, dad groups, and looking after yourself</p>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>This manual provides general guidance. Always consult healthcare professionals for medical advice.</p>
+            <p class="footer-meta">Last updated: November 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('SW registered'))
+                    .catch(error => console.log('SW registration failed'));
+            });
+        }
+    </script>
+</body>
+</html>
+
