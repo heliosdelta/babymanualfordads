@@ -1,4 +1,4 @@
-const CACHE_NAME = 'baby-manual-v1';
+const CACHE_NAME = 'baby-manual-v4';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -12,6 +12,8 @@ const urlsToCache = [
   '/development.html',
   '/health.html',
   '/support.html',
+  '/admin.html',
+  '/session-6-resources.html',
   '/styles.css',
   '/manifest.json'
 ];
@@ -51,6 +53,15 @@ self.addEventListener('fetch', event => {
       .then(response => {
         // Return cached version or fetch from network
         return response || fetch(event.request).then(fetchResponse => {
+          // Cache images dynamically
+          if (event.request.destination === 'image') {
+            const responseToCache = fetchResponse.clone();
+            caches.open(CACHE_NAME).then(cache => {
+              cache.put(event.request, responseToCache);
+            });
+            return fetchResponse;
+          }
+          
           // Don't cache non-GET requests or non-HTML/CSS/JS
           if (event.request.method !== 'GET' || 
               !event.request.url.match(/\.(html|css|js|json)$/)) {
@@ -76,4 +87,3 @@ self.addEventListener('fetch', event => {
       })
   );
 });
-
