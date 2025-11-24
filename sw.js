@@ -1,4 +1,4 @@
-const CACHE_NAME = 'baby-manual-v4';
+const CACHE_NAME = 'baby-manual-v5';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -29,6 +29,8 @@ self.addEventListener('install', event => {
         console.log('Cache install failed:', error);
       })
   );
+  // Force activation of new service worker immediately
+  self.skipWaiting();
 });
 
 // Activate event - clean up old caches
@@ -44,6 +46,8 @@ self.addEventListener('activate', event => {
       );
     })
   );
+  // Take control of all pages immediately
+  return self.clients.claim();
 });
 
 // Fetch event - serve from cache, fallback to network
